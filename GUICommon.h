@@ -7,10 +7,10 @@ static int CustomSeed = WM_USER;
 #endif
 
 
-#ifndef STDAFX_H
-#define STDAFX_H
+#ifndef WINDOWS_H
+#define WINDOWS_H
 
-#include "stdafx.h"
+#include <windows.h>
 
 #endif
 

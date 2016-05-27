@@ -27,7 +27,7 @@ struct AddComboBox {
 		Height = _Height;
 
 		GUIHandle = CreateWindowEx(NULL,
-			__T("COMBOBOX"),
+			L"COMBOBOX",
 			DefaultText,
 			WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_VSCROLL | WS_OVERLAPPED |
 			CBS_HASSTRINGS | 

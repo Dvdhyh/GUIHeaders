@@ -27,7 +27,7 @@ struct AddCheckBox {
 		Height = _Height;
 
 		GUIHandle = CreateWindowEx(NULL,
-			__T("BUTTON"),
+			L"BUTTON",
 			DefaultText,
 			WS_TABSTOP | WS_VISIBLE | WS_CHILD |
 			BS_AUTOCHECKBOX,
