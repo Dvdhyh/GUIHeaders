@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUIBUTTONRADIO_H
 #define GUIBUTTONRADIO_H
 
@@ -68,6 +65,18 @@ struct AddRadioButtons {
 			GetModuleHandle(NULL),
 			NULL);
 	}
+
+	bool GetState() {
+		return SendMessage(GUIHandle, BM_GETCHECK, 0, 0) == BST_CHECKED ? true : false;
+	}
+
+	void SetState(bool On) {
+		if (On)
+			SendMessage(GUIHandle, BM_SETCHECK, BST_CHECKED, 0);
+		else
+			SendMessage(GUIHandle, BM_SETCHECK, BST_UNCHECKED, 0);
+	}
+
 };
 
 

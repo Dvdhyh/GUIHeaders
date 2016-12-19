@@ -1,6 +1,4 @@
 #pragma once
-#include "GUICommon.h"
-
 #ifndef GUISTATUSBAR_H
 #define GUISTATUSBAR_H
 

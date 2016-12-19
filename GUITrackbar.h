@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef COMMCTRL_H
 #define COMMCTRL_H
 #include "CommCtrl.h"
@@ -67,13 +64,13 @@ struct AddTrackBar {
 		SendMessage(GUIHandle, TBM_GETPOS, (WPARAM)0, (LPARAM)0);
 	}
 
-	void DisplayText(wchar_t* _INSERTTEXT, int _right, int _OriginX = 0, int _OriginY = 0, int _Width = 50, int _Height = 30) {
-		switch (_right) {
+	void DisplayText(wchar_t* _INSERTTEXT, int _side, int _OriginX = 0, int _OriginY = 0, int _Width = 50, int _Height = 30) {
+		switch (_side) {
 		case 0:
-			_right = SS_RIGHT;
+			_side = SS_RIGHT;
 			break;
 		case 1:
-			_right = SS_LEFT;
+			_side = SS_LEFT;
 			break;
 		}
 
@@ -81,7 +78,7 @@ struct AddTrackBar {
 			L"STATIC",
 			_INSERTTEXT,
 			WS_CHILD | WS_VISIBLE |
-			_right,     // SS_RIGHT   SS_LEFT  SS_CENTER
+			_side,     // SS_RIGHT   SS_LEFT  SS_CENTER
 			_OriginX, _OriginY, _Width, _Height,
 			ParentHWND,
 			NULL,

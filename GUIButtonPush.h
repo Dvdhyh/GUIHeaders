@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUIBUTTONPUSH_H
 #define GUIBUTTONPUSH_H
 

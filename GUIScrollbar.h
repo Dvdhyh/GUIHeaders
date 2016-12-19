@@ -1,8 +1,4 @@
 #pragma once
-#include "GUICommon.h"
-
-#ifndef GUISCROLLBAR_H
-#define GUISCROLLBAR_H
 
 static int  cxChar=1, cxCaps=1, cyChar=1, cxClient, cyClient, iMaxWidth;
 
@@ -213,4 +209,4 @@ struct AddScrollBar {
 
 	}
 };
-#endif
+

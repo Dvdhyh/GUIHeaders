@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUILISTVIEW_H
 #define GUILISTVIEW_H
 

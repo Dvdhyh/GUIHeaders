@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUIBUTTONCHECK_H
 #define GUIBUTTONCHECK_H
 
@@ -43,6 +40,18 @@ struct AddCheckBox {
 		SetText(_DefaultText);
 		DrawGUI(_OriginX, _OriginY, _Width, _Height);
 	}
+
+	bool GetState() {
+		return SendMessage(GUIHandle, BM_GETCHECK, 0, 0) == BST_CHECKED ? true : false;
+	}
+
+	void SetState(bool On) {
+		if (On)
+			SendMessage(GUIHandle, BM_SETCHECK, BST_CHECKED, 0);
+		else
+			SendMessage(GUIHandle, BM_SETCHECK, BST_UNCHECKED, 0);
+	}
+
 };
 
 

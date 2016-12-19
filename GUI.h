@@ -1,5 +1,6 @@
 #ifndef GUI_H
 #define GUI_H
+#include "GUICommon.h"
 
 #include "GUIButtonPush.h"
 #include "GUIEdit.h"

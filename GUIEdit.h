@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUIEDIT_H
 #define GUIEDIT_H
 

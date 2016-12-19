@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUIBUTTONGROUPBOX_H
 #define GUIBUTTONGROUPBOX_H
 

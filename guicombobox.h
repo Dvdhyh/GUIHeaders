@@ -1,6 +1,3 @@
-#pragma once
-#include "GUICommon.h"
-
 #ifndef GUICOMBOBOX_H
 #define GUICOMBOBOX_H
 
@@ -84,6 +81,5 @@ struct AddComboBox {
 		SendMessage(GUIHandle, CB_RESETCONTENT, 0, 0);
 	}
 };
-
 
 #endif
