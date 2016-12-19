@@ -1,4 +1,3 @@
-#pragma once
 #ifndef GUICOMMON_H
 #define GUICOMMON_H
 

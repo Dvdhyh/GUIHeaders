@@ -16,7 +16,7 @@ struct AddEditButtons {
 
 	void SetHandle(HWND _hWnd) { ParentHWND = _hWnd; }
 
-	void SetDefaultText(LPCWSTR _DefaultText = L" ") { DefaultText = _DefaultText; }
+	void SetDefaultText(LPCWSTR _DefaultText = L"") { DefaultText = _DefaultText; }
 
 	void DrawGUI(int _OriginX, int _OriginY, int _Width, int _Height) {
 		DestroyWindow(GUIHandle);
@@ -52,7 +52,7 @@ struct AddEditButtons {
 		SendMessage(GUIHandle, WM_GETTEXT, (WPARAM)_length, (LPARAM)stringVar);
 	}
 
-	void AppendText(wchar_t stringVar) {
+	void AppendText(wchar_t* stringVar) {
 		SendMessage(GUIHandle, EM_REPLACESEL, (WPARAM)0, (LPARAM)stringVar);
 	}
 
@@ -62,6 +62,10 @@ struct AddEditButtons {
 
 	void SetInt(int _IntNum) {
 		SetDlgItemInt(ParentHWND, gLabelID, (WPARAM)_IntNum, false);
+	}
+
+	void SetReadOnly(bool _state = false) { //Set to read only
+		SendMessage(GUIHandle, EM_SETREADONLY, (WPARAM)_state, (LPARAM)NULL);
 	}
 };
 

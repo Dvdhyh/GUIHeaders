@@ -1,4 +1,3 @@
-#pragma once
 #ifndef GUI_H
 #define GUI_H
 
@@ -13,5 +12,6 @@
 #include "GUIListview.h"
 #include "GUITooltips.h"
 #include "GUIStatusbar.h"
+#include "GUIScrollbar.h"
 
 #endif
